@@ -21,8 +21,8 @@
         {{/if}}
         <ul id="job-list" class="list-group">
           {{#each jobs}}
-            <li class="list-group-item {{#if dataValues.new_job }}new-job{{/if}}">
-              <p>{{dataValues.company}}</p>
+            <li class="list-group-item {{#if dataValues.doacao }}new-job{{/if}}">
+              <p>{{dataValues.fornecedor}}</p>
               <h2>{{dataValues.title}}</h2>
               <p>R${{dataValues.valor_un}}</p>
               <span class="new-job-label">Doação</span>

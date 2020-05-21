@@ -11,13 +11,13 @@ const Insumo = db.define('insumo', {
   valor_un: {
     type: Sequelize.STRING,
   },
-  company: {
+  fornecedor: {
     type: Sequelize.STRING,
   },
   email: {
     type: Sequelize.STRING,
   },
-  new_job: {
+  doacao: {
     type: Sequelize.INTEGER,
   }
 });

@@ -27,16 +27,16 @@ router.get('/add', (req, res) => {
 // add insumo via post
 router.post('/add', (req, res) => {
 
-  let {title, valor_un, company, description, email, new_job} = req.body;
+  let {title, valor_un, fornecedor, description, email, doacao} = req.body;
 
   // insert
   Insumo.create({
     title,
     description,
     valor_un,
-    company,
+    fornecedor,
     email,
-    new_job
+    doacao
   })
   .then(() => res.redirect('/'))
   .catch(err => console.log(err));
