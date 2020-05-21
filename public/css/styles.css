@@ -38,10 +38,10 @@
 /* banner */
 #top-container {
   padding: 110px;
-  background-color: #F7F9FC;
-  border-bottom: 4px solid #013068;
+  background-color: #DE7D68;
+  border-bottom: 4px solid #E6816B;
   margin-bottom: 30px;
-  background-image: url("../img/banner2.jpg");
+  /* background-image: url("../img/banner2.jpg"); */
   background-position: 0 100px;
   background-size: cover;
   color: #FFF;
@@ -102,7 +102,7 @@
 
 #job-list .list-group-item.new-job {
   border: none;
-  background-color: #FFF7CC;
+  background-color: #DE7D68;
 }
 
 #job-list-title {
