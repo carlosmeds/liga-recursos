@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Job Finder</title>
+  <title>Liga Recursos</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Job Finder</a>
+      <a class="navbar-brand" href="index.html">Liga Recursos</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,7 +21,7 @@
             <a class="nav-link" href="index.html">Ver Vagas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-primary" href="add.html">Abrir Vaga</a>
+            <a class="nav-link btn btn-primary" href="add.html">Oferecer insumo insumo</a>
           </li>
         </ul>
       </div>
@@ -36,25 +36,26 @@
         <h2>Preencha os dados da melhor forma possível para encontrar mais rápido seu dev!</h2>
         <form action="">
           <div class="form-group">
-            <label for="title">Título da vaga:</label>
-            <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga" required>
+            <label for="title">Título do Produto</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título o produto" required>
             <small id="titleHelp" class="form-text text-muted">O título é muito importante, seja claro e objetivo.</small>
           </div>
           <div class="form-group">
-            <label for="description">Descrição da vaga:</label>
-            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descreva as atividades do desenvolvedor..." required></textarea>
+            <label for="description">Descrição do produto:</label>
+            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descreva o produto" required></textarea>
           </div>
           <div class="form-group">
-            <label for="company">Empresa contratante:</label>
-            <input type="text" class="form-control" id="company" name="company" placeholder="Digite a empresa que vai contratar" required>
+            <label for="company">CNPJ ou CPF do fornecedor:</label>
+            <input type="text" class="form-control" id="company" name="company" placeholder="Digite o CNPJ ou CPF" required>
           </div>
           <div class="form-group">
             <label for="email">E-mail para contato:</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail para contato" required>
           </div>
           <div class="form-group">
-            <label for="salary">Salário oferecido:</label>
-            <input type="text" class="form-control" id="salary" name="salary" placeholder="Digite o Salário da vaga" required>
+            <label for="salary">Valor Unitário:</label>
+            <input type="text" class="form-control" id="salary" name="salary" placeholder="Digite o valor por unidade" required>
+            <small id="titleHelp" class="form-text text-muted">Caso queira doar, coloque 0</small>
           </div>
           <input type="hidden" name="new_job" value="1">
           <button type="submit" class="btn btn-primary">Enviar</button>
