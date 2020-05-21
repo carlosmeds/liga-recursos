@@ -27,13 +27,13 @@ router.get('/add', (req, res) => {
 // add insumo via post
 router.post('/add', (req, res) => {
 
-  let {title, salary, company, description, email, new_job} = req.body;
+  let {title, valor_un, company, description, email, new_job} = req.body;
 
   // insert
   Insumo.create({
     title,
     description,
-    salary,
+    valor_un,
     company,
     email,
     new_job

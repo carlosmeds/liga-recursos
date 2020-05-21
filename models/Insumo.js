@@ -8,7 +8,7 @@ const Insumo = db.define('insumo', {
   description: {
     type: Sequelize.STRING,
   },
-  salary: {
+  valor_un: {
     type: Sequelize.STRING,
   },
   company: {
