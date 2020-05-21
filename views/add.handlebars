@@ -17,7 +17,8 @@
         </div>
         <div class="form-group">
           <label for="fornecedor">Nome do fornecedor:</label>
-          <input type="text" class="form-control" id="fornecedor" name="fornecedor" placeholder="Digite a empresa que vai contratar" required>
+          <input type="text" class="form-control" id="fornecedor" name="fornecedor"
+            placeholder="Digite o nome de quem irá fornecer" required>
         </div>
         <div class="form-group">
           <label for="email">E-mail para contato:</label>
@@ -26,11 +27,18 @@
         </div>
         <div class="form-group">
           <label for="valor_un">Valor Unitário:</label>
-          <input type="text" class="form-control" id="valor_un" name="valor_un" placeholder="Digite o valor por unidade"
+          <input type="number" class="form-control" id="valor_un" name="valor_un" placeholder="Digite o valor por unidade"
             required>
-          <small id="titleHelp" class="form-text text-muted">Caso queira doar, coloque 0</small>
+          <small id="titleHelp" class="form-text text-muted">Caso queira doar, digite o preço de mercado e embaixo clique em "sim"</small>
         </div>
-        <input type="hidden" name="doacao" value="1">
+        <div class="form-group">
+          <label for="valor_un">Para doação:</label><br />
+          <input type="radio" id="nao" name="doacao" value="1">
+          <label for="male">Sim</label><br>
+          <input type="radio" id="sim" name="doacao" value="0">
+          <label for="female">Não</label><br>
+        </div>
+        {{!-- <input type="hidden" name="doacao" value="1"> --}}
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </div>
