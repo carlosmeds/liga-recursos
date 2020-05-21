@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db/connection');
 
-const Job = db.define('job', {
+const Insumo = db.define('job', {
   title: {
     type: Sequelize.STRING,
   },
@@ -22,4 +22,4 @@ const Job = db.define('job', {
   }
 });
 
-module.exports = Job
+module.exports = Insumo
