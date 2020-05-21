@@ -10,10 +10,10 @@ router.get('/test', (req, res) => {
 //saiba mais
 router.get('/view/:id', (req, res) => Insumo.findOne({
   where: {id: req.params.id}
-}).then(job => {
+}).then(insumo => {
 
   res.render('view', {
-    job
+    insumo
   });
 
 }).catch(err => console.log(err)));

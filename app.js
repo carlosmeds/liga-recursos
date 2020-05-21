@@ -38,17 +38,17 @@ db
 // routes
 app.get('/', (req, res) => {
 
-  let search = req.query.job;
-  let query  = '%'+search+'%'; // PH -> PHP, Word -> Wordpress, press -> Wordpress
+  let search = req.query.insumo;
+  let query  = '%'+search+'%'; 
 
   if(!search) {
     Insumo.findAll({order: [
       ['createdAt', 'DESC']
     ]})
-    .then(jobs => {
+    .then(insumos => {
   
       res.render('index', {
-        jobs
+        insumos
       });
   
     })
@@ -59,12 +59,12 @@ app.get('/', (req, res) => {
       order: [
         ['createdAt', 'DESC']
     ]})
-    .then(jobs => {
+    .then(insumos => {
       console.log(search);
       console.log(search);
   
       res.render('index', {
-        jobs, search
+        insumos, search
       });
   
     })
@@ -74,5 +74,5 @@ app.get('/', (req, res) => {
   
 });
 
-// jobs routes
-app.use('/jobs', require('./routes/jobs'));
+// insumos routes
+app.use('/insumos', require('./routes/insumos'));
