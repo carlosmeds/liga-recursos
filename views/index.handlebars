@@ -22,12 +22,11 @@
         <ul id="job-list" class="list-group">
           {{#each jobs}}
             <li class="list-group-item {{#if dataValues.new_job }}new-job{{/if}}">
-              <img src="/img/company.svg" alt="Company">
               <p>{{dataValues.company}}</p>
               <h2>{{dataValues.title}}</h2>
               <p>R${{dataValues.salary}}</p>
               <span class="new-job-label">Nova</span>
-              <a class="btn btn-primary" href="/jobs/view/{{dataValues.id}}">Ver vaga</a>
+              <a class="btn btn-primary" href="/jobs/view/{{dataValues.id}}">Saiba mais</a>
             </li>
           {{/each}}
         </ul>
