@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db/connection');
 
-const Insumo = db.define('job', {
+const Insumo = db.define('insumo', {
   title: {
     type: Sequelize.STRING,
   },
