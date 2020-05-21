@@ -1,14 +1,14 @@
 const express = require('express');
 const router  = express.Router();
-const Job     = require('../models/Job');
+const Insumo     = require('../models/Insumo');
 
 // rota de teste
 router.get('/test', (req, res) => {
   res.send('deu certo');
 });
 
-// detalhe da vaga -> view/1, view/2
-router.get('/view/:id', (req, res) => Job.findOne({
+//saiba mais
+router.get('/view/:id', (req, res) => Insumo.findOne({
   where: {id: req.params.id}
 }).then(job => {
 
@@ -24,13 +24,13 @@ router.get('/add', (req, res) => {
   res.render('add');
 })
 
-// add job via post
+// add insumo via post
 router.post('/add', (req, res) => {
 
   let {title, salary, company, description, email, new_job} = req.body;
 
   // insert
-  Job.create({
+  Insumo.create({
     title,
     description,
     salary,

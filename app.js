@@ -4,7 +4,7 @@ const app        = express();
 const path       = require('path');
 const db         = require('./db/connection');
 const bodyParser = require('body-parser');
-const Job        = require('./models/Job');
+const Insumo        = require('./models/Insumo');
 const Sequelize  = require('sequelize');
 const Op         = Sequelize.Op;
 
@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
   let query  = '%'+search+'%'; // PH -> PHP, Word -> Wordpress, press -> Wordpress
 
   if(!search) {
-    Job.findAll({order: [
+    Insumo.findAll({order: [
       ['createdAt', 'DESC']
     ]})
     .then(jobs => {
@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
     })
     .catch(err => console.log(err));
   } else {
-    Job.findAll({
+    Insumo.findAll({
       where: {title: {[Op.like]: query}},
       order: [
         ['createdAt', 'DESC']
