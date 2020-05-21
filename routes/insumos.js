@@ -2,11 +2,6 @@ const express = require('express');
 const router  = express.Router();
 const Insumo     = require('../models/Insumo');
 
-// rota de teste
-router.get('/test', (req, res) => {
-  res.send('deu certo');
-});
-
 //saiba mais
 router.get('/view/:id', (req, res) => Insumo.findOne({
   where: {id: req.params.id}
