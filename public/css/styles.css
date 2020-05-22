@@ -38,7 +38,7 @@
 /* banner */
 #top-container {
   padding: 110px;
-  background-color: #91D2D9;
+  background-color: #2e7c85;
   border-bottom: 4px solid #7ac9d1;
   margin-bottom: 30px;
   /* background-image: url("../img/banner2.jpg"); */
@@ -103,7 +103,7 @@
 
 #insumo-list .list-group-item.new-insumo {
   border: none;
-  background-color: #91D2D9;
+  background-color: #2e7c85;
 }
 
 #insumo-list-title {
