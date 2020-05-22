@@ -50,6 +50,7 @@
 #main-title {
   padding: 30px 0;
   font-size: 4rem;
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 }
 
 #main-subtitle {
@@ -176,7 +177,7 @@
   font-weight: bold;
 }
 
-#add-form-container form input, #add-form-container form textarea {
+#add-form-container form input, #add-form-container form textarea, #add-form-container form select  {
   border: 2px solid #CCC;
   background-color: #F8F9FA;
 }
