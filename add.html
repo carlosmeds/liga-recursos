@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Liga Recursos</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+  <title>Liga RecurSOS</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="public/css/styles.css">
@@ -14,7 +15,7 @@
 <body>
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Liga Recursos</a>
+      <img src="/img/teste1.png" width="100" height="40">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,8 +55,18 @@
               placeholder="Digite o nome de quem irá fornecer" required>
           </div>
           <div class="form-group">
+            <label for="estado">Estado localizado:</label>
+            <input type="text" class="form-control" id="estado" name="estado" placeholder="Digite o estado"
+              required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone para contato:</label>
+            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite o telefone"
+              required>
+          </div>
+          <div class="form-group">
             <label for="email">E-mail para contato:</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail para contato"
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail"
               required>
           </div>
           <div class="form-group">

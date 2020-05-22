@@ -19,6 +19,12 @@ const Insumo = db.define('insumo', {
   },
   doacao: {
     type: Sequelize.INTEGER,
+  },
+  estado: {
+    type: Sequelize.STRING,
+  },
+  telefone: {
+    type: Sequelize.STRING,
   }
 });
 

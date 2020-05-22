@@ -38,8 +38,8 @@
 /* banner */
 #top-container {
   padding: 110px;
-  background-color: #DE7D68;
-  border-bottom: 4px solid #E6816B;
+  background-color: #91D2D9;
+  border-bottom: 4px solid #7ac9d1;
   margin-bottom: 30px;
   /* background-image: url("../img/banner2.jpg"); */
   background-position: 0 100px;
@@ -49,7 +49,7 @@
 
 #main-title {
   padding: 30px 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 #main-subtitle {
@@ -102,7 +102,7 @@
 
 #insumo-list .list-group-item.new-insumo {
   border: none;
-  background-color: #DE7D68;
+  background-color: #91D2D9;
 }
 
 #insumo-list-title {
@@ -132,8 +132,8 @@
 }
 
 .new-insumo-label {
-  background-color: #FFD500;
-  color: #4D5154;
+  background-color: #F2BF80;
+  color: #000;
   text-transform: uppercase;
   font-weight: bold;
   padding: 5px 10px;
@@ -253,7 +253,7 @@
   }
 
   #main-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   #main-subtitle {

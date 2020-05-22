@@ -1,13 +1,19 @@
 <div id="insumo-view-container" class="container">
   <div class="row text-center">
     <a class="back-link main-color" href="/">Voltar</a>
-    <div class="col-md-12">
+    <div class="col-md-12 mt-4">
       <h1 class="main-color">{{insumo.dataValues.title}}</h1>
       <p class="bold">Descrição:</p>
       <p class="insumo-desc">{{insumo.dataValues.description}}</p>
-      <p><span class="bold">O valor por unidade é de:</span> R${{insumo.dataValues.valor_un}}</p>
+      <p><span class="bold">Valor por unidade:</span> R${{insumo.dataValues.valor_un}}</p>
+       <p>
+        <span class="bold">Estado:</span>{{insumo.dataValues.estado}}</a>
+      </p>
       <p>
-        Para contactar <span class="bold main-color">{{insumo.dataValues.fornecedor}}</span> envie um e-mail para <a class="main-color" href="mail:to{{insumo.dataValues.email}}">{{insumo.dataValues.email}}</a>
+        <span class="bold">Email:</span>{{insumo.dataValues.email}}</a>
+      </p>     
+      <p>
+        <span class="bold">Telefone:</span>{{insumo.dataValues.telefone}}</a>
       </p>
     </div>
   </div>
