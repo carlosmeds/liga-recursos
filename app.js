@@ -6,9 +6,10 @@ const db         = require('./db/connection');
 const bodyParser = require('body-parser');
 const Insumo        = require('./models/Insumo');
 const Sequelize  = require('sequelize');
+const process = require('process');
 const Op         = Sequelize.Op;
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function() {
   console.log(`O Express está rodando na porta ${PORT}`);
