@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "link hospitals and resources",
   "main": "app.js",
+  "engines": {
+    "node": "10.15.x"
+  },
   "scripts": {
     "dev": "nodemon app.js"
   },
