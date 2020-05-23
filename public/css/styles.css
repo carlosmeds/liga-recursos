@@ -66,6 +66,10 @@
   float: left;
 }
 
+.titulos {
+  text-transform: uppercase;
+}
+
 #search-form {
   padding: 30px 100px;
 }
