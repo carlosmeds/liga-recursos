@@ -3,6 +3,13 @@
   font-family: Helvetica, sans-serif
 }
 
+.ordem {
+  margin-right: 6px;
+  margin-left: 20px;
+  float: left !important;
+  width: 20px !important;
+}
+
 footer {
   text-align: center;
   padding: 3px;
@@ -74,12 +81,26 @@ footer {
   float: left;
 }
 
+.filtro1 {
+  width: 200px !important;
+  margin-left: 110px;
+  float: left;
+}
+
 .titulos {
   text-transform: uppercase;
 }
 
 #search-form {
   padding: 30px 100px;
+}
+
+.coluna {
+  padding: 30px 10px !important;
+}
+
+.altu {
+  height: 100% !important;
 }
 
 #search-form .col-md-10, #search-form .col-md-2 {

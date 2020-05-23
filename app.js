@@ -99,21 +99,37 @@ app.get('/filtro', (req, res) => {
 app.get('/filtro-avancado', (req, res) => {
 
   let search = req.query.insumo;
+  let lista = req.query.listagem;
   let query = search + '%';
   let estadao = req.query.estado;
 
-  Insumo.findAll({
-    where: {title: {[Op.like]: query}, estado: {[Op.like] : estadao}},
-    order: [
-      ['createdAt', 'DESC']
-    ]
-  })
-    .then(insumos => {
-      res.render('index', {
-        insumos, search
-      });
+  if (lista == 0) {
+    Insumo.findAll({
+      where: {title: {[Op.like]: query}, estado: {[Op.like] : estadao}},
+      order: [
+        ['createdAt', 'DESC']
+      ]
     })
-    .catch(err => console.log(err));
+      .then(insumos => {
+        res.render('index', {
+          insumos, search
+        });
+      })
+      .catch(err => console.log(err));
+  } else {
+    Insumo.findAll({
+      where: {title: {[Op.like]: query}, estado: {[Op.like] : estadao}},
+      order: [
+        ['valor_un', 'ASC']
+      ]
+    })
+      .then(insumos => {
+        res.render('index', {
+          insumos, search
+        });
+      })
+      .catch(err => console.log(err));
+  }
 });
 
 // insumos routes
