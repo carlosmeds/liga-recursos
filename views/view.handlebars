@@ -5,16 +5,26 @@
       <h1 class="main-color">{{insumo.dataValues.title}}</h1>
       <p class="bold">Descrição:</p>
       <p class="insumo-desc">{{insumo.dataValues.description}}</p>
+      {{#if insumo.dataValues.doacao }}
+      <p><span class="bold">PARA DOAÇÃO</span></p>
+      {{else}}
       <p><span class="bold">Valor por unidade: </span> {{insumo.dataValues.valor_un}}</p>
-       <p>
+      {{/if}}
+      <p>
         <span class="bold">Estado: </span>{{insumo.dataValues.estado}}</a>
       </p>
       <p>
         <span class="bold">Email: </span>{{insumo.dataValues.email}}</a>
-      </p>     
+      </p>
       <p>
         <span class="bold">Telefone: </span>{{insumo.dataValues.telefone}}</a>
       </p>
+      <br/>
+      <br/>
     </div>
   </div>
 </div>
+<footer>
+  A plataforma LigaRecurS.O.S. tem o objetivo de facilitar e tornar mais ágil a busca por fornecedores de insumos
+  hospitalares.
+</footer>

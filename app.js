@@ -74,10 +74,9 @@ app.get('/', (req, res) => {
       })
       .catch(err => console.log(err));
   }
-
-
 });
 
+//filtro tela inicial
 app.get('/filtro', (req, res) => {
 
   let estadao = req.query.estado;
@@ -91,6 +90,27 @@ app.get('/filtro', (req, res) => {
     .then(insumos => {
       res.render('index', {
         insumos
+      });
+    })
+    .catch(err => console.log(err));
+});
+
+//filtro tela pesquisa
+app.get('/filtro-avancado', (req, res) => {
+
+  let search = req.query.insumo;
+  let query = search + '%';
+  let estadao = req.query.estado;
+
+  Insumo.findAll({
+    where: {title: {[Op.like]: query}, estado: {[Op.like] : estadao}},
+    order: [
+      ['createdAt', 'DESC']
+    ]
+  })
+    .then(insumos => {
+      res.render('index', {
+        insumos, search
       });
     })
     .catch(err => console.log(err));

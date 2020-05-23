@@ -119,12 +119,16 @@ footer {
   margin-bottom: 5px;
 }
 
-#insumo-list .list-group-item.new-insumo {
+.risco {
+  text-decoration: line-through;
+}
+
+#insumo-list .list-group-item.doacao {
   border: none;
   background-color: #2e7c85;
 }
 
-#insumo-list .list-group-item.new-insumo h2, #insumo-list .list-group-item.new-insumo p{
+#insumo-list .list-group-item.doacao h2, #insumo-list .list-group-item.doacao p{
   color: white;
 }
 
@@ -154,7 +158,7 @@ footer {
   color: #FFF;
 }
 
-.new-insumo-label {
+.doacao-label {
   background-color: #ffff00;
   color: #000;
   text-transform: uppercase;
@@ -166,7 +170,7 @@ footer {
   display: none;
 }
 
-.new-insumo .new-insumo-label {
+.doacao .doacao-label {
   display: block;
 }
 
@@ -310,7 +314,7 @@ footer {
     top: calc(50% - 25px);
   }
 
-  .new-insumo .new-insumo-label {
+  .doacao .doacao-label {
     display: none;
   }
 
