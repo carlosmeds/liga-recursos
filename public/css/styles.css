@@ -60,6 +60,12 @@
 
 /* form */
 
+.filtro {
+  width: 300px !important;
+  margin-left: 10px;
+  float: left;
+}
+
 #search-form {
   padding: 30px 100px;
 }
