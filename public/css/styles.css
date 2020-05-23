@@ -24,15 +24,15 @@
 
 .navbar .nav-item .btn {
   color: #FFF;
-  background-color: #F03E3E;
+  background-color: #E0230F;
   border: 1px solid transparent;
   border-radius: 0;
 }
 
 .nav-link.btn.btn-primary:hover, #search-form button:hover, .list-group-item a:hover, #form-box button:hover {
   background-color: #FFF;
-  color: #F03E3E;
-  border-color: #F03E3E;
+  color: #E0230F;
+  border-color: #E0230F;
 }
 
 /* banner */
@@ -50,7 +50,7 @@
 #main-title {
   padding: 30px 0;
   font-size: 4rem;
-  font-family: Consolas;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #main-subtitle {
@@ -77,7 +77,7 @@
 
 #search-form button {
   color: #FFF;
-  background-color: #F03E3E;
+  background-color: #E0230F;
   border: 1px solid transparent;
 }
 
@@ -106,6 +106,10 @@
   background-color: #2e7c85;
 }
 
+#insumo-list .list-group-item.new-insumo h2, #insumo-list .list-group-item.new-insumo p{
+  color: white;
+}
+
 #insumo-list-title {
   margin-bottom: 35px;
 }
@@ -126,14 +130,14 @@
   top: 35px;
   height: 50px;
   line-height: 35px;
-  background-color: #F03E3E;
+  background-color: #E0230F;
   border: 1px solid transparent;
   border-radius: 0;
   color: #FFF;
 }
 
 .new-insumo-label {
-  background-color: #F2BF80;
+  background-color: #ffff00;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
@@ -167,7 +171,7 @@
 }
 
 #add-form-container h2 {
-  color: #F03E3E;
+  color: #E0230F;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 30px;
@@ -185,7 +189,7 @@
 #form-box button {
   height: 50px;
   width: 200px;
-  background-color: #F03E3E;
+  background-color: #E0230F;
   border: 1px solid transparent;
   border-radius: 0;
   margin-top: 20px;
@@ -223,17 +227,17 @@
 }
 
 .main-color {
-  color: #F03E3E;
+  color: #E0230F;
 }
 
 .back-link {
-  border: 1px solid #F03E3E;
+  border: 1px solid #E0230F;
   padding: 5px 10px;
   transition: .5s;
 }
 
 .back-link:hover {
-  background-color: #F03E3E;
+  background-color: #E0230F;
   color: #FFF;
   text-decoration: none;
 }
