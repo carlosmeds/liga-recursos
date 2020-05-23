@@ -197,6 +197,10 @@
 
 /* insumo-view */
 
+.forne {
+  text-transform: uppercase;
+}
+
 #insumo-view-container {
   margin-top: 100px;
 }

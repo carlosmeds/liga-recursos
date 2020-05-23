@@ -22,9 +22,9 @@
         <ul id="insumo-list" class="list-group">
           {{#each insumos}}
             <li class="list-group-item {{#if dataValues.doacao }}new-insumo{{/if}}">
-              <p>{{dataValues.fornecedor}}</p>
+              <p><span class="forne">{{dataValues.fornecedor}}</span> em <span class="forne">{{dataValues.estado}}</span></p>
               <h2>{{dataValues.title}}</h2>
-              <p>R${{dataValues.valor_un}}</p>
+              <p>Valor por unidade: {{dataValues.valor_un}}</p>
               <span class="new-insumo-label">Doação</span>
               <a class="btn btn-primary" href="/insumos/view/{{dataValues.id}}">Saiba mais</a>
             </li>
