@@ -11,7 +11,7 @@
       <form action="/insumos/add" method="POST">
         <div class="form-group">
           <label for="title">Nome do produto:</label>
-          <input type="text" class="form-control" id="title" name="title" placeholder="Digite o nome do produto"
+          <input type="text" pattern="[a-zA-Z0-9. - , ]" class="form-control" id="title" name="title" placeholder="Digite o nome do produto"
             required>
         </div>
         <div class="form-group">
@@ -83,6 +83,10 @@
     </div>
   </div>
 </div>
+<footer>
+  A plataforma LigaRecurS.O.S. tem o objetivo de facilitar e tornar mais ágil a busca por fornecedores de insumos
+  hospitalares.
+</footer>
 <script>
   $(document).ready(function ($) {
     console.log('maks')

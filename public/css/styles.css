@@ -3,6 +3,14 @@
   font-family: Helvetica, sans-serif
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #143539;
+  color: white;
+  padding: 20px;
+}
+
 /* nav */
 .navbar  {
   padding: 1rem;
